@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<style>
+body{
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+    .login-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-color: cornsilk;
+height: 90vh;
+width: 90vw;
+border-radius: 50px;
+box-sizing: border-box;
+ max-width: 400px;  
+  min-width: 260px;
+  margin-top: 30px;
+}
+#lemail{ margin-bottom: 30px;
+
+}
+#lpass{ margin-bottom: 30px;
+
+}
+.sub{ margin-bottom: 30px;
+
+}
+fieldset{
+    border-radius: 30px;
+}
+.al{
+     position: relative;
+    transition:all 0.3s linear ;
+    cursor: pointer;
+}
+.al:hover{
+    transform: scale(1.05);
+    background-color:rgba(45, 145, 145, 0.3);
+}
+</style>
+<body>
+    <div class="login-container">
+        <form action="">
+            <fieldset>
+                <legend>login</legend>
+            <div id="lemail" class="al">
+            <label for="email">EMAIL-ID:</label>
+            <input type="email" id="email" placeholder="enter your email-id" required>
+            </div>
+            <div id="lpass" class="al">
+            <label for="password3">PASSWORD:</label>
+            <input type="password" id="password3" placeholder="enter your password" required>
+            </div>
+            <div class="sub al" >
+                <button>login</button>
+                
+            </div>
+            <div id="google" class="al"> <button type="submit"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="google" width="30" height="20">Sign up with Google</button>
+   </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
